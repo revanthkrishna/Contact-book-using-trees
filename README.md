@@ -37,18 +37,20 @@ Sample Output
 2
 0
 
-==============================================================================================
 
 
-Solution:
+SOLUTION:
 ----------------------------------------------------------------------------------------------
+The primitive solution is a very easy one. But its efficiency is not good. This solution is highly efficient(because of trees).
+This solution works for very large number of contacts(Order of hundreds of millions).
+
 This program uses trees. Each node in the tree is associated with a number,a char and can have 26 children(one for each alphabet).
 The number associated with a node tells the number of contacts that contain that char. 
 The char of root node is '*' and num is 0.
 
-ADD operation
+ADD operation :
 This op constructs the tree. The tree is constructed according to the chars of the contact.
 
-FIND op
+FIND op :
 This op traverses the tree until the last char of 'partial'; the num associated with this node is the required result.
 If we encounter a null during traversal, then the result is 0.
