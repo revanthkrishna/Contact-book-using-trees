@@ -1,4 +1,4 @@
-# Contact-book-using-trees
+# Contact-book-using-trie-data-structure
 ----------------------------------------------------------------------------------------------
 This is a contact application. It follows these rules.
 
